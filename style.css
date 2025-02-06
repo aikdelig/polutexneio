@@ -219,34 +219,62 @@
     }
 
     
-    @media (max-width: 768px) {
-        .container {
-            flex-direction: column; 
-            text-align: center;
-        }
+   @media (max-width: 768px) {
+    /* Επικεφαλίδα */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
-        .map, .logo {
-            max-width: 100%; 
-        }
+    .contact-info {
+        grid-template-columns: 1fr; /* Μία στήλη σε κινητά */
+        text-align: center;
+    }
 
-        .map iframe {
-            height: 250px; 
-        }
-    }.gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 300px;
-            height: 700 px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
+    /* Μενού */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    /* Σλάιντ (Slideshow) */
+    .slideshow-container {
+        height: 200px; /* Μικρότερο ύψος σε κινητά */
+    }
+
+    /* Περιεχόμενο */
+    .content-section {
+        flex-direction: column; /* Σε κινητά όλα στοιχίζονται κάθετα */
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-us {
+        max-width: 90%; /* Περισσότερος χώρος για κείμενο */
+        font-size: 16px; /* Μεγαλύτερο font */
+    }
+
+    /* Συλλογή εικόνων */
+    .gallery img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    /* Χάρτης και footer */
+    .map iframe {
+        height: 200px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
 </style>
