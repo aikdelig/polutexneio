@@ -220,7 +220,62 @@
         width: 100%; /* Κλιμάκωση iframe */
         height: 100%; /* Πλήρες ύψος */
     }
-
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Το hamburger εμφανίζεται */
+    }
+    .nav-links {
+        display: none; /* Κρύβεται μέχρι να το ανοίξει ο χρήστης */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex; /* Εμφανίζεται όταν πατάμε το hamburger */
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+}
+    /* Σλάιντ (Slideshow) */
+    .slideshow-container {
+        height: 200px; /* Μικρότερο ύψος σε κινητά */
+    }
+    /* Περιεχόμενο */
+    .content-section {
+        flex-direction: column; /* Σε κινητά όλα στοιχίζονται κάθετα */
+        align-items: center;
+        text-align: center;
+    }
+    #about-us {
+        max-width: 90%; /* Περισσότερος χώρος για κείμενο */
+        font-size: 16px; /* Μεγαλύτερο font */
+    }
+    /* Συλλογή εικόνων */
+    .gallery img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    /* Χάρτης και footer */
+    .map iframe {
+        height: 200px;
+    }
+    footer {
+        padding: 10px;
+    }
+}
 
 
 </style>
