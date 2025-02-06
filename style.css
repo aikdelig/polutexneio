@@ -65,143 +65,7 @@
             margin: 0 0px;
         }
 
-        nav ul li a {<!DOCTYPE html>
-<html lang="el">
-<head>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ΠΟΛΥΤΕΧΝΕΙΟ</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-</head>
-<body>
-    <body style="background-color: #00000B;">
-
-    <header>
-        <div class="logo">ΠΟΛΥΤΕΧΝΕΙΟ</div>
-        <div class="contact-info">
-            <h3><span class="material-symbols-outlined">mail</span> Email:<br> steliosdeligiannis@hotmail.gr</h3>
-	    <h3><span class="material-symbols-outlined">call</span> Phone:<br>+30 6940722161</h3>
-        </div>
-    </header>
-
- <nav>
-     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="truck-interior.html">Truck Interior</a></li>
-        <li><a href="gallery.html">Photo Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-
-    <div class="slideshow-container">
-        <div class="slide">
-            <img src="image12.jpg" alt="Slide 1">
-            <div class="slide-text">
-                <h2>Truck Upholstery</h2>
-                <p>Upholstery is possible in every conceivable version...</p>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="image22.jpg" alt="Slide 2">
-            <div class="slide-text">
-                <h2>Custom Interiors</h2>
-                <p>Tailor your truck interior to match your style...</p>
-            </div>
-        </div>
-   
-     <div class="slide">
-            <img src="image32.jpg" alt="Slide 3">
-            <div class="slide-text">
-                <h2>Custom Interiors</h2>
-                <p>Tailor your truck interior to match your style...</p>
- </div>
-        </div>
-    </div>
-<section id="gallery" class="content-section">
-   
- <h2>Photo Gallery</h2>
- 
-   <p>
-Εξερευνήστε τη συλλογή μας με εικόνες από τα έργα που έχουμε υλοποιήσει...
-  </p>
- 
-   <div class="gallery">
-        <img src="kourtina.jpg" alt="Φωτογραφία 1">
-        <img src="v8.jpg" alt="Φωτογραφία 2">
-        <img src="kathisma.jpg" alt="Φωτογραφία 3">
-        <img src="king.jpg" alt="Φωτογραφία 4">
-        <img src="king2.jpg" alt="Φωτογραφία 5">
-        <img src="pataki.jpg" alt="Φωτογραφία 6">
-        <img src="v8mple.jpg" alt="Φωτογραφία 7">
-        <img src="photo3.jpg" alt="Φωτογραφία 8">
-        <img src="im.jpg" alt="Φωτογραφία 9">
-        <img src="ima.jpg" alt="Φωτογραφία 10">
-        <img src="imag.jpg" alt="Φωτογραφία 11">
-        <img src="image.jpg" alt="Φωτογραφία 12">
-        <img src="imagee.jpg" alt="Φωτογραφία 13">
-        <img src="iimage.jpg" alt="Φωτογραφία 14">
-        <img src="imaage.jpg" alt="Φωτογραφία 15">
-        <img src="immage.jpg" alt="Φωτογραφία 16">
-
-    </div>
-
-</section>
-
-
-
-    <footer>
-        <div class="container">
-    <div class="logo">
-        <img src="logo.png" alt="Λογότυπο" />
-    </div>
-    <div class="info">
-        <h2>Πληροφορίες Καταστήματος</h2>
-        <p>Διεύθυνση: ΕΟ Αγρινίου Θέρμου, Παραβόλα 300 10, Ελλάδα</p>
-        <p>Τηλεφωνο επικοινωνίας: 6940722161<p> 
-    </div>
-              <div class="map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24940.258127941775!2d21.497985951428003!3d38.6136346171024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135ef5374068329d%3A0xda4486d100a49402!2zzqDOn86bzqXOpM6VzqfOnc6VzorOnw!5e0!3m2!1sel!2sgr!4v1737105199801!5m2!1sel!2sgr"
-         width="300" 
-         height="225"
-         style="border:0;" 
-         allowfullscreen="" 
-         loading="lazy"
-         referrerpolicy="no-referrer-when-downgrade">
-       </iframe>
-       </div>
-      </div>
-        <p>&copy; 2024 Special Interior. All rights reserved.</p>
-        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
-       
-    </footer>
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            const slides = document.querySelectorAll('.slide');
-            slides.forEach(slide => slide.style.display = 'none');
-            slideIndex++;
-            if (slideIndex > slides.length) slideIndex = 1;
-            slides[slideIndex - 1].style.display = 'block';
-            setTimeout(showSlides, 5000);
-        }
-        
-function toggleMenu() {
-    const navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("active");
-    }
-
-    </script>
-</body>
-</html>
-
+        nav ul li a {
             color: #A9ACB6;
             text-decoration: none;
             font-size: 20px;
@@ -357,29 +221,7 @@ function toggleMenu() {
         height: 100%; /* Πλήρες ύψος */
     }
 
-    /* Responsive design για μικρές οθόνες */
-   @media (max-width: 768px) {
-    /* Επικεφαλίδα */
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr; /* Μία στήλη σε κινητά */
-        text-align: center;
-    }
-
-    .menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
-
-/* 🔹 Responsive menu για κινητά */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Το hamburger εμφανίζεται */
     }
@@ -445,5 +287,6 @@ function toggleMenu() {
         padding: 10px;
     }
 }
+
 
 </style>
