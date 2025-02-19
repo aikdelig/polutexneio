@@ -1,16 +1,16 @@
- <style>
+   <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #00000B;
+             background-color: lightblue;
             color: #A9ACB6;
         }
        .content-section img {
-             max-width: 100%; 
-             height: auto; 
-             margin-top: 20px;
-        }
+             max-width: 100%; /* Αυτόματη κλιμάκωση εικόνων */
+    height: auto; /* Διατήρηση αναλογιών */
+    margin-top: 20px;
+}
 
 
         header {
@@ -33,22 +33,22 @@
             font-size: 14px;
             display: grid;
             grid-template-columns: auto auto;
-
-
+          
+	    
         }
 	.contact-info p {
 	    margin-right:10px;
             padding:5px 5px;
 	}
 
-
+      
         nav {
-
+           
     	   width: 98%;
     	   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
     	   position: absolute;
     	   z-index: 2;
-
+         
 }
 
         nav ul {
@@ -56,8 +56,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-
-
+	    
+            
 	    text-align: right;
         }
 
@@ -97,49 +97,52 @@
             width: 100%;
             height: 100%;
 	}
-
+        
        .slideshow-container {
         position: relative;
         width: 100%;
         height: 300px;
         overflow: hidden;
         z-index: 1;
-
+        
 }
+
+/* Ομαλή μετάβαση εικόνων */
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+   
 }
 
+/* Απαλότερα όρια για το κείμενο */
 .slide-text {
     position: absolute;
     bottom: 50px;
     left: 50px;
     color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
-    background: rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Πιο απαλό κείμενο */
+    background: rgba(0, 0, 0, 0.5); /* Διαφανές μαύρο φόντο */
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες */
 }
 
         .slide-text h2 {
             font-size: 50px;
             margin: 0;
         }
-
+	
         .content-section {
             display: flex; 
             justify-content: space-between;
             align-items: flex-start; 
-            margin: 30px;
+            margin: 30px; /* Κενό γύρω από την ενότητα */
             flex-wrap: wrap;
         }
 
         #about-us {
             flex: 1;
-            max-width: 40%;
+            max-width: 40%; /* Περιορίζει το πλάτος στο 50% */
             margin-right: 20px;
             color: #A9ACB6;
             line-height: 1.0;
@@ -154,8 +157,8 @@
 
         #photo-collage {
             flex: 1;
-            height: 300px; 
-
+            height: 300px; /* Ύψος του κολάζ */
+   
          }
 
         #photo-collage img {
@@ -181,42 +184,130 @@
             color: white;
         }
 
-    /* Container ãéá ôá óôïé÷åßá */
+    /* Container για τα στοιχεία */
     .container {
-        display: flex; 
-        justify-content: space-between;
-        align-items: center; 
-        padding: 20px; 
-        gap: 20px; 
+        display: flex; /* Χρήση Flexbox για οριζόντια διάταξη */
+        justify-content: space-between; /* Απόσταση μεταξύ των στοιχείων */
+        align-items: center; /* Κεντράρισμα στοιχείων κατακόρυφα */
+        padding: 20px; /* Εσωτερικό περιθώριο */
+        gap: 20px; /* Απόσταση μεταξύ στοιχείων */
     }
 
-
+    /* Στυλ για το λογότυπο */
     .logo {
-        flex-shrink: 0;
-        max-width: 150px; 
+        flex-shrink: 0; /* Το λογότυπο δεν μικραίνει */
+        max-width: 150px; /* Μέγιστο πλάτος λογότυπου */
     }
 
     .logo img {
-        width: 100%; 
-        height: auto; 
+        width: 100%; /* Κλιμάκωση εικόνας */
+        height: auto; /* Διατήρηση αναλογιών */
     }
 
-
+    /* Στυλ για τις πληροφορίες */
     .info {
-        flex: 1; 
-        text-align: center; 
+        flex: 1; /* Οι πληροφορίες καταλαμβάνουν τον περισσότερο διαθέσιμο χώρο */
+        text-align: center; /* Στοίχιση κειμένου στο κέντρο */
     }
 
-
+    /* Στυλ για τον χάρτη */
     .map {
-        flex-shrink: 0; 
-        max-width: 300px; 
+        flex-shrink: 0; /* Ο χάρτης δεν μικραίνει */
+        max-width: 300px; /* Μέγιστο πλάτος χάρτη */
     }
 
     .map iframe {
-        width: 100%;
-        height: 100%; 
+        width: 100%; /* Κλιμάκωση iframe */
+        height: 100%; /* Πλήρες ύψος */
     }
 
+    /* Responsive design για μικρές οθόνες */
+   @media (max-width: 768px) {
+    /* Επικεφαλίδα */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
- </style>
+    .contact-info {
+        grid-template-columns: 1fr; /* Μία στήλη σε κινητά */
+        text-align: center;
+    }
+
+    .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* 🔹 Responsive menu για κινητά */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Το hamburger εμφανίζεται */
+    }
+
+    .nav-links {
+        display: none; /* Κρύβεται μέχρι να το ανοίξει ο χρήστης */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Εμφανίζεται όταν πατάμε το hamburger */
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+    /* Σλάιντ (Slideshow) */
+    .slideshow-container {
+        height: 200px; /* Μικρότερο ύψος σε κινητά */
+    }
+
+    /* Περιεχόμενο */
+    .content-section {
+        flex-direction: column; /* Σε κινητά όλα στοιχίζονται κάθετα */
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-us {
+        max-width: 90%; /* Περισσότερος χώρος για κείμενο */
+        font-size: 16px; /* Μεγαλύτερο font */
+    }
+
+    /* Συλλογή εικόνων */
+    .gallery img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    /* Χάρτης και footer */
+    .map iframe {
+        height: 200px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+</style>
