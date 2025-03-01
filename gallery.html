@@ -112,7 +112,18 @@
         <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
        
     </footer>
+<script>
+        let slideIndex = 0;
+        showSlides();
 
- <script src="script.js" defer></script>   
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.style.display = 'none');
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 5000);
+        }
+</script>   
 </body>
 </html>
