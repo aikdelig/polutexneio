@@ -19,8 +19,9 @@
         </div>
     </header>
 
- <nav>
-    <ul>
+<nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="truck-interior.html">Truck Interior</a></li>
         <li><a href="gallery.html">Photo Gallery</a></li>
@@ -111,4 +112,10 @@
             slides[slideIndex - 1].style.display = 'block';
             setTimeout(showSlides, 5000);
         }
+	<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
+    }
+</script>
 </script>
