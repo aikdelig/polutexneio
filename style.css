@@ -1,4 +1,4 @@
-   <style>
+ <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -249,34 +249,36 @@
     transform: scale(1.05);
 }
 	    
-   /* Υπάρχοντα styles διατηρούνται */
+    /* Responsive design για μικρές οθόνες */
+   @media (max-width: 768px) {
+    /* Επικεφαλίδα */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
-/* Προσθήκη burger menu */
-.menu-toggle {
+
+    .contact-info {
+        grid-template-columns: 1fr; /* Μία στήλη σε κινητά */
+        text-align: center;
+    }
+
+    .menu-toggle {
     display: none;
     font-size: 30px;
     cursor: pointer;
     color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    z-index: 3;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* 🔹 Responsive menu για κινητά */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Εμφανίζει το burger menu */
+        display: block; /* Το hamburger εμφανίζεται */
     }
 
     .nav-links {
-        display: none; /* Απόκρυψη του menu μέχρι να ανοίξει */
+        display: none; /* Κρύβεται μέχρι να το ανοίξει ο χρήστης */
         flex-direction: column;
         position: absolute;
         top: 50px;
@@ -285,11 +287,10 @@
         background: black;
         text-align: center;
         padding: 10px 0;
-        z-index: 2;
     }
 
     .nav-links.active {
-        display: flex; /* Εμφανίζεται όταν πατάμε το burger */
+        display: flex; /* Εμφανίζεται όταν πατάμε το hamburger */
     }
 
     .nav-links li {
@@ -304,39 +305,31 @@
     }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
+    /* Σλάιντ (Slideshow) */
     .slideshow-container {
-        height: 200px;
+        height: 200px; /* Μικρότερο ύψος σε κινητά */
     }
 
+    /* Περιεχόμενο */
     .content-section {
-        flex-direction: column;
+        flex-direction: column; /* Σε κινητά όλα στοιχίζονται κάθετα */
         align-items: center;
         text-align: center;
     }
 
     #about-us {
-        max-width: 90%;
-        font-size: 16px;
+        max-width: 90%; /* Περισσότερος χώρος για κείμενο */
+        font-size: 16px; /* Μεγαλύτερο font */
     }
 
+    /* Συλλογή εικόνων */
     .gallery img {
         width: 100%;
         max-width: 250px;
+        height: auto;
     }
 
+    /* Χάρτης και footer */
     .map iframe {
         height: 200px;
     }
