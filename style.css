@@ -246,6 +246,17 @@
 .gallery img:hover {
     transform: scale(1.05);
 }
+.gallery h2{
+	font-size: 30px;
+        margin-bottom: 10px;
+        font-family: 'Satisfy', cursive;
+	color: #A9ACB6;
+}
+.gallery p{
+	color: #A9ACB6;
+	position: absolute;
+}
+	
 
 /* Burger icon */
 .menu-toggle {
