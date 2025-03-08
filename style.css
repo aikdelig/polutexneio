@@ -304,5 +304,11 @@
 	#about-us {
             padding: 10px 0;
         }
+	 .logo {
+             text-align: center;
+        }
+	.contact-info {
+            text-align:center;
+        }
 }
 </style>
