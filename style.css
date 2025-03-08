@@ -301,5 +301,8 @@
 		  text-align: center; /* Κεντραρισμένο περιεχόμενο */
                   gap: 10px;
 	 }
+	#about-us {
+            padding: 10px 0;
+        }
 }
 </style>
