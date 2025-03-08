@@ -33,8 +33,8 @@
             font-size: 14px;
             display: grid;
             grid-template-columns: auto auto;
-          
-	    
+          position: absolute;
+	  color:#A9ACB6;  
         }
 	.contact-info p {
 	    margin-right:10px;
