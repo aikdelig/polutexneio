@@ -296,15 +296,28 @@
         text-align: center; /* Κεντραρισμένο περιεχόμενο */
         gap: 10px;
       }
-     .content-section {
-		 flex-direction: column;
-		  text-align: center; /* Κεντραρισμένο περιεχόμενο */
-                  gap: 10px;
-	 }
-	#about-us {
-            padding: 10px 0;
-	    width:100%;
-        }
+    
+    .content-section {
+        flex-direction: column; /* Τοποθετεί τα στοιχεία το ένα κάτω από το άλλο */
+        align-items: center; /* Κεντράρει το περιεχόμενο */
+    }
+
+    #about-us {
+        max-width: 100%; /* Κάνει το στοιχείο να καταλαμβάνει όλο το πλάτος */
+        margin-right: 0; /* Αφαιρεί το περιθώριο δεξιά */
+        text-align: center; /* Κεντράρει το κείμενο */
+    }
+
+    #photo-collage {
+        width: 100%; /* Κάνει το στοιχείο να καταλαμβάνει όλο το πλάτος */
+        height: auto; /* Προσαρμόζει το ύψος */
+    }
+
+    #photo-collage img {
+        height: auto; /* Διατηρεί τις σωστές αναλογίες της εικόνας */
+    }
+
+
 	 header {
             position: relative;
             background-color: #00000B;
