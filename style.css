@@ -249,93 +249,77 @@
     transform: scale(1.05);
 }
 	    
-    /* Responsive design για μικρές οθόνες */
-   @media (max-width: 768px) {
-    /* Επικεφαλίδα */
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
+  /* Κρυφό sidebar στην αρχή */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Ξεκινά κρυμμένο */
+    width: 33.3%; /* Πιάνει το 1/3 της οθόνης */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
 
+/* Όταν το menu ανοίγει */
+#sidebar.active {
+    right: 0;
+}
 
-    .contact-info {
-        grid-template-columns: 1fr; /* Μία στήλη σε κινητά */
-        text-align: center;
-    }
+/* Στυλ για το κουμπί κλεισίματος */
+.close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
 
-    .menu-toggle {
-    display: none;
+/* Τα links μέσα στο sidebar */
+#sidebar ul {
+    list-style: none;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+#sidebar ul li a:hover {
+    color: lightblue;
+}
+
+/* Burger icon */
+.menu-toggle {
+    display: none; /* Κρυφό σε μεγάλες οθόνες */
     font-size: 30px;
     cursor: pointer;
     color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
 }
 
-/* 🔹 Responsive menu για κινητά */
+/* Responsive εμφάνιση burger menu */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Το hamburger εμφανίζεται */
+        display: block;
     }
 
     .nav-links {
-        display: none; /* Κρύβεται μέχρι να το ανοίξει ο χρήστης */
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background: black;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex; /* Εμφανίζεται όταν πατάμε το hamburger */
-    }
-
-    .nav-links li {
-        padding: 10px 0;
-    }
-
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        display: block;
-    }
-}
-
-    /* Σλάιντ (Slideshow) */
-    .slideshow-container {
-        height: 200px; /* Μικρότερο ύψος σε κινητά */
-    }
-
-    /* Περιεχόμενο */
-    .content-section {
-        flex-direction: column; /* Σε κινητά όλα στοιχίζονται κάθετα */
-        align-items: center;
-        text-align: center;
-    }
-
-    #about-us {
-        max-width: 90%; /* Περισσότερος χώρος για κείμενο */
-        font-size: 16px; /* Μεγαλύτερο font */
-    }
-
-    /* Συλλογή εικόνων */
-    .gallery img {
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }
-
-    /* Χάρτης και footer */
-    .map iframe {
-        height: 200px;
-    }
-
-    footer {
-        padding: 10px;
+        display: none; /* Κρύβει το κανονικό menu */
     }
 }
 
