@@ -12,10 +12,10 @@
 <body>
 <body style="background-color: #00000B;">
     <header>
-        <div class="logo">ΠΟΛΥΤΕΧΝΕΙΟ</div>
+        <div class="name">ΠΟΛΥΤΕΧΝΕΙΟ</div>
         <div class="contact-info">
-            <h3><span class="material-symbols-outlined">mail</span> Email:<br> steliosdeligiannis@hotmail.gr</h3>
-	    <h3><span class="material-symbols-outlined">call</span> Phone:<br>+30 6940722161</h3>
+            <h3><span class="material-symbols-outlined">mail</span> Email:steliosdeligiannis@hotmail.gr</h3>
+	    <h3><span class="material-symbols-outlined">call</span> Phone:+30 6940722161</h3>
         </div>
     </header>
 
@@ -124,6 +124,9 @@
             slides[slideIndex - 1].style.display = 'block';
             setTimeout(showSlides, 5000);
         }
+	 function toggleMenu() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
 </script>   
 </body>
 </html>
