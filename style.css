@@ -28,17 +28,15 @@
             color: #A9ACB6;
         }
 
-        .contact-info {
+       .contact-info {
             text-align: left;
             font-size: 14px;
-            display: grid;
-            grid-template-columns: auto auto;
-	    color:#A9ACB6;  
+	    color: #A9ACB6;
+	    
         }
 	.contact-info p {
 	    margin-right:10px;
             padding:5px 5px;
-	    
 	}
 
       
@@ -271,8 +269,8 @@
         display: none; /* Κρύβεται μέχρι να πατηθεί το κουμπί */
         flex-direction: column;
         position: absolute;
-        top: 50px;
-        left: 0;
+        top: 30px;
+        right: 0;
         width: 50%;
         background: black;
         text-align: center;
@@ -293,5 +291,15 @@
         font-size: 20px;
         display: block;
     }
+      fouter{
+	      flex-direction: column;
+        text-align: center; /* Κεντραρισμένο περιεχόμενο */
+        gap: 10px;
+      }
+	 #about-us {
+		 flex-direction: column;
+		  text-align: center; /* Κεντραρισμένο περιεχόμενο */
+                  gap: 10px;
+	 }
 }
 </style>
