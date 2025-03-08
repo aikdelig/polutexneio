@@ -22,7 +22,7 @@
             align-items: center;
         }
 
-        .logo {
+        .name {
             font-family: 'Satisfy', cursive;
             font-size: 36px;
             color: #A9ACB6;
@@ -303,8 +303,9 @@
 	 }
 	#about-us {
             padding: 10px 0;
+	    width:100%;
         }
-	 .logo {
+	 .name {
              text-align: center;
         }
 	.contact-info {
