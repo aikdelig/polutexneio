@@ -291,12 +291,12 @@
         font-size: 20px;
         display: block;
     }
-      fouter{
-	      flex-direction: column;
+      .container{
+	flex-direction: column;
         text-align: center; /* Κεντραρισμένο περιεχόμενο */
         gap: 10px;
       }
-	 #about-us {
+     .content-section {
 		 flex-direction: column;
 		  text-align: center; /* Κεντραρισμένο περιεχόμενο */
                   gap: 10px;
