@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +20,14 @@
     </header>
 
 <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i> <!-- Εικονίδιο burger menu -->
-    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="truck-interior.html">Truck Interior</a></li>
         <li><a href="gallery.html">Photo Gallery</a></li>
         <li><a href="#footer">Contact</a></li>
     </ul>
-    <div id="sidebar">
-        <span class="close-btn" onclick="toggleMenu()">&times;</span>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="truck-interior.html">Truck Interior</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-    </div>
 </nav>
-
 
 
     <div class="slideshow-container">
@@ -126,10 +113,9 @@
             setTimeout(showSlides, 5000);
         }
 	
-     function toggleMenu() {
-        const sidebar = document.getElementById('sidebar');
-        sidebar.classList.toggle('active');
-    }
+    function toggleMenu() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
     }
 
 </script>
