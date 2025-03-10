@@ -23,7 +23,7 @@
         }
 
         .name {
-            font-family: 'Satisfy', cursive;
+            font-family:  Arial, sans-serif;
             font-size: 36px;
             color: #A9ACB6;
         }
@@ -144,7 +144,7 @@
             margin-right: 20px;
             color: #A9ACB6;
             line-height: 1.0;
-            font-size: 13px;
+            font-size: 18px;
         }
 
         #about-us h2 {
@@ -313,7 +313,7 @@
     #about-us {
         max-width: 100%; /* Κάνει το στοιχείο να καταλαμβάνει όλο το πλάτος */
         margin-right: 0; /* Αφαιρεί το περιθώριο δεξιά */
-        text-align: center; /* Κεντράρει το κείμενο */
+        text-align: left; /* Κεντράρει το κείμενο */
     }
 
     #photo-collage {
